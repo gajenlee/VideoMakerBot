@@ -61,7 +61,7 @@ class EditVideo(ContentCreator):
     def __add_voice(self):
         voice = VoiceMaker()
         self.NEW_VOICE_FILE_PATH = os.path.join(self.NEW_FINAL_FOLDER_PATH + self.VOICE_FILE)
-        voice.speech_text(self.__text["quote"], self.NEW_VOICE_FILE_PATH)
+        voice.speech(self.__text["quote"], self.NEW_VOICE_FILE_PATH)
 
     def __add_image(self):
         self.NEW_IMAGE_FILE_PATH = os.path.join(self.NEW_FINAL_FOLDER_PATH + self.IMAGE_FILE)

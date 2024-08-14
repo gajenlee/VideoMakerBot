@@ -18,3 +18,7 @@ Created by Gajendran
 
 https://github.com/user-attachments/assets/97daacd9-47aa-4eb8-b51e-d5b41e07881c
 
+
+## License
+
+[MIT License](LICENCE)
