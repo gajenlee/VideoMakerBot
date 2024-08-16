@@ -19,7 +19,7 @@ class VoiceMaker:
         communicate = edge_tts.Communicate(
             text, 
             voice=voice,
-            rate="-15%",
+            rate="-20%",
         )
         asyncio.run(communicate.save(file_name))
         

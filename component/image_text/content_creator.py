@@ -26,11 +26,18 @@ class ContentCreator:
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             content = soup.find(id='article-content')
-            content = content.find_all('li', {'aria-level': 1})
+            content = content.find_all('li')
             self.__content_text = content
+            
 
         except requests.ConnectionError() as e:
             print("Network Conntection Error")
+        
+        except requests.RequestException() as e:
+            print("Network Request Error")
+        
+        except requests.HTTPError() as e:
+            print("Network HTTP Error")
 
         
 
